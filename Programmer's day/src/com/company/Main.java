@@ -5,20 +5,14 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 public class Main {
 
     public static void main(String[] args) {
-        String data = "A1";
-        char letter = 'A';
-
-        try {
-            Integer data2 = Integer.valueOf(data);
-            System.out.println(data2);
-        } catch (NumberFormatException e) {
-            System.err.println("Error");
-        }
-
-        char [] myCharArray = data.toCharArray();
-        System.out.println(myCharArray);
+        char letter = 'H';
+        int nomber = 7;
 
         int data1 = Character.getNumericValue(letter);
-        System.out.println(data1);
+        int sum = data1 + nomber;
+
+        if (sum % 2 == 1) {
+            System.out.println("black");
+        } else System.out.println("white");
     }
 }
